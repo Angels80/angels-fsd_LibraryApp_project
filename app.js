@@ -1,5 +1,6 @@
 const express = require("express");
 const app = new express();
+const port =process.env.PORT || 5000;
 
 const nav=[
     
@@ -88,6 +89,5 @@ app.post('/signup.html', function(req, res)
 
 
 
-app.listen(5000);
-console.log("server ready at port: 5000");
+app.listen(port,()=>{console.log("server ready at port:");});
 // 127.0.0.1:5000
